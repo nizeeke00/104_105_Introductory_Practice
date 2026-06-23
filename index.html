@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+  <title>Кудашкин Алексей</title>
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="header-container">
+      <div class="logo-wrapper">
+        <h1 class="main-title">Кудашкин Алексей</h1>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Обо мне</a></li>
+          <li><a href="#hobby" class="nav-link">Хобби</a></li>
+          <li><a href="#projects" class="nav-link">Проекты</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main-grid">
+    
+    <main class="main-content">
+
+      <section id="about" class="about-section">
+        <h2 class="section-title">Обо мне</h2>
+        <div class="about-wrapper">
+          <div class="about-text-wrapper">
+            <p class="about-text">
+              Привет! Меня зовут Кудашкин Алексей, я живу в Саранске. 
+              Мне 20 лет, учусь на программиста, увлекаюсь frontend-разработкой.
+            </p>
+            <p class="about-text">
+              В свободное время гуляю, занимаюсь спортом, играю в игры.
+            </p>
+          </div>
+          <img 
+            class="profile-image"
+            src="https://ic.pics.livejournal.com/klasson/23467161/3591605/3591605_900.png" 
+            alt="Фотография Кудашкина Алексея" 
+            width="200" 
+            height="200"
+          />
+        </div>
+      </section>
+
+      <section id="hobby" class="hobby-section">
+        <h2 class="section-title">Моё хобби</h2>
+        <article class="hobby-card">
+          <p class="hobby-text">
+            Люблю лепить из глины и создавать керамическую посуду. 
+            Хожу в мастерскую дважды в неделю, работаю на гончарном круге.
+          </p>
+        </article>
+      </section>
+
+      <section class="form-section">
+        <h2 class="section-title">Связаться со мной</h2>
+        
+        <form action="#" method="POST" class="contact-form">
+          
+          <div class="form-group">
+            <label for="user-name" class="form-label">Ваше имя</label>
+            <input 
+              type="text" 
+              id="user-name" 
+              name="user-name" 
+              class="form-input" 
+              placeholder="Иван"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="user-email" class="form-label">Email</label>
+            <input 
+              type="email" 
+              id="user-email" 
+              name="user-email" 
+              class="form-input" 
+              placeholder="ivan@mail.ru"
+            />
+          </div>
+
+          <div class="form-group form-group-full">
+            <span class="form-label">Что нужно сделать?</span>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="project-type" value="web" checked />
+                Сайт
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="project-type" value="design" />
+                Дизайн
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="project-type" value="other" />
+                Другое
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="user-message" class="form-label">Сообщение</label>
+            <textarea 
+              id="user-message" 
+              name="user-message" 
+              class="form-textarea" 
+              placeholder="Расскажите о вашем проекте..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Отправить</button>
+        </form>
+      </section>
+
+    </main>
+
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Любимые книги</h2>
+      <ul class="book-list">
+        <li>«Мастер и Маргарита» — Булгаков</li>
+        <li>«Сто лет одиночества» — Маркес</li>
+        <li>«1984» — Оруэлл</li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <section id="projects" class="projects-section">
+    <div class="projects-container">
+      <h2 class="section-title projects-title">Мои проекты</h2>
+      <div class="projects-grid">
+        
+        <article class="project-card">
+          <div class="project-image" style="background: #e8b87c;">
+          </div>
+          <h3 class="project-name">Дизайн-система</h3>
+          <p class="project-desc">UI-кит для приложений</p>
+          <span class="project-tag">Figma</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" style="background: #7ec8e3;">
+          </div>
+          <h3 class="project-name">Портфолио-сайт</h3>
+          <p class="project-desc">Личный сайт-визитка</p>
+          <span class="project-tag">HTML/CSS</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" style="background: #f5a97f;">
+          </div>
+          <h3 class="project-name">Мобильное приложение</h3>
+          <p class="project-desc">Прототип для привычек</p>
+          <span class="project-tag">UX/UI</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" style="background: #a8d5ba;">
+                      </div>
+          <h3 class="project-name">E-commerce</h3>
+          <p class="project-desc">Магазин керамики</p>
+          <span class="project-tag">Web Design</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" style="background: #c9b0e6;">
+                      </div>
+          <h3 class="project-name">Dashboard</h3>
+          <p class="project-desc">Аналитика для стартапа</p>
+          <span class="project-tag">React</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" style="background: #f7c5a0;">
+                      </div>
+          <h3 class="project-name">Игровой лендинг</h3>
+          <p class="project-desc">Промо-страница игры</p>
+          <span class="project-tag">GSAP</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts-section">
+    <div class="contacts-container">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contacts-grid">
+        <div class="contact-item">
+          <a href="mailto:kudashkin200591@gmail.com" class="contacts-link">kudashkin200591@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <a href="#" class="contacts-link">@nizeeke</a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/nizeeke00" class="contacts-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <div class="footer-container">
+      <p class="footer-text">
+        &copy; 2026 Кудашкин Алексей
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
