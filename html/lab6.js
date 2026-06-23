@@ -9,7 +9,7 @@ if (age < 8) {
     console.log('Добро пожаловать на аттракцион!');
 }
 Задача 2: «Анализатор последовательности»
-javascript
+
 let sum = 0;
 
 for (let i = 1; i <= 200; i++) {
@@ -19,8 +19,9 @@ for (let i = 1; i <= 200; i++) {
 }
 
 console.log('Сумма чисел, которые делятся на 3, но не делятся на 5:', sum);
+
 Задача 3: «Шифратор»
-javascript
+
 for (let i = 15; i >= 1; i--) {
     if (i % 2 === 0) {
         console.log(i);
@@ -29,7 +30,7 @@ for (let i = 15; i >= 1; i--) {
     }
 }
 Задача 4: «Финансовый симулятор»
-javascript
+
 let money = 10000;
 
 for (let year = 1; year <= 10; year++) {
@@ -38,7 +39,7 @@ for (let year = 1; year <= 10; year++) {
 
 console.log('Сумма через 10 лет:', money);
 Задача 5: «Строитель лесенки»
-javascript
+
 let ladder = '';
 
 for (let i = 1; i <= 6; i++) {
@@ -46,7 +47,7 @@ for (let i = 1; i <= 6; i++) {
     console.log(ladder);
 }
 Задача 6: «Космический передатчик»
-javascript
+
 for (let i = 1; i <= 50; i++) {
     if (i % 4 === 0 && i % 7 === 0) {
         console.log('BeepBoop');
@@ -59,7 +60,7 @@ for (let i = 1; i <= 50; i++) {
     }
 }
 Задача 7: «Гипотеза Сиракуз»
-javascript
+
 let n = 27;
 
 for (let i = 1; i <= 15; i++) {
