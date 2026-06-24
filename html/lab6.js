@@ -1,0 +1,73 @@
+let age = 15;
+let height = 150;
+
+if (age < 8) {
+    console.log('Вход запрещен, слишком мал');
+} else if (age >= 8 && age <= 18 && height < 140) {
+    console.log('Вход только с родителями');
+} else if (age > 18 || (age >= 8 && height >= 140)) {
+    console.log('Добро пожаловать на аттракцион!');
+}
+Задача 2: «Анализатор последовательности»
+
+let sum = 0;
+
+for (let i = 1; i <= 200; i++) {
+    if (i % 3 === 0 && i % 5 !== 0) {
+        sum = sum + i;
+    }
+}
+
+console.log('Сумма чисел, которые делятся на 3, но не делятся на 5:', sum);
+
+Задача 3: «Шифратор»
+
+for (let i = 15; i >= 1; i--) {
+    if (i % 2 === 0) {
+        console.log(i);
+    } else {
+        console.log(i * 2);
+    }
+}
+Задача 4: «Финансовый симулятор»
+
+let money = 10000;
+
+for (let year = 1; year <= 10; year++) {
+    money = money + (money * 0.08);
+}
+
+console.log('Сумма через 10 лет:', money);
+Задача 5: «Строитель лесенки»
+
+let ladder = '';
+
+for (let i = 1; i <= 6; i++) {
+    ladder = ladder + '#';
+    console.log(ladder);
+}
+Задача 6: «Космический передатчик»
+
+for (let i = 1; i <= 50; i++) {
+    if (i % 4 === 0 && i % 7 === 0) {
+        console.log('BeepBoop');
+    } else if (i % 4 === 0) {
+        console.log('Beep');
+    } else if (i % 7 === 0) {
+        console.log('Boop');
+    } else {
+        console.log(i);
+    }
+}
+Задача 7: «Гипотеза Сиракуз»
+
+let n = 27;
+
+for (let i = 1; i <= 15; i++) {
+    if (n % 2 === 0) {
+        n = n / 2;
+    } else {
+        n = n * 3 + 1;
+    }
+    console.log(n);
+}
