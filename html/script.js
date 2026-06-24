@@ -20,7 +20,7 @@ projects.forEach(project => {
     category.textContent = project.category;
     
     const likes = document.createElement('span');
-    likes.textContent = `❤️ ${project.likes}`;
+    likes.textContent = ` ${project.likes}`;
     
     card.append(title, category, likes);
     galleryContainer.append(card);
